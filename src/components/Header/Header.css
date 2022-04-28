@@ -31,7 +31,7 @@
 .headerline2{
     margin-top:25%;
     padding-top:5%;
-    color:rgb(0, 0, 0);
+    color:#585858;
     font-size: small;
     font-family: "Brownstdlight";
     transform: translate(0%,100%);
@@ -42,7 +42,7 @@
 
 .verticalline {
     margin-top: 5%;
-    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid #585858;
     height: 5vw;
     width:20%;
     transform: translate(248%,25%);
