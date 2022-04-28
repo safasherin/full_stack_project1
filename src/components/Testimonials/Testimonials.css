@@ -1,0 +1,31 @@
+/* .testiContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.hrStyle{
+    
+    width: 7rem;
+}
+
+.testiReviews{
+    display:flex;
+justify-content: center;
+text-align: center;
+
+}
+
+.paraReviews{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #343434;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.moreReviewStyle{
+    
+    text-align: center;
+    margin-top: 1rem;
+}

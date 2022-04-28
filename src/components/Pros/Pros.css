@@ -1,0 +1,48 @@
+.containerPros{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.headingStyle{
+    color:#706e6e;
+    text-align: center;
+    font-family: Brownstdregular;
+    margin: 0;
+    font-size: 0.9rem;
+
+}
+
+.paragraphStyle{
+    color:#a8a3a3;
+    text-align: center;
+    font-family: "Brownstdlight";
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.protitleStyle{
+    text-align: center;
+  font-size: 4wv;
+  color:#3b3b3b;
+  font-family: "Big Caslon Medium";
+  font-weight: 200;
+}
+
+.column{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prosContainer{
+    background-color: #f7f7f7;
+    margin: 6rem 0;
+    padding: 4rem;
+}
+
+.prosImgStyle{
+    width:6rem;
+    padding-left: 4rem;
+}

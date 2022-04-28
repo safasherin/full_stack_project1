@@ -1,0 +1,94 @@
+.Navbar{
+    height: 142px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamburgerStyle{
+    display: none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    /* width: 400px; */
+width:25%;
+color:rgb(134, 133, 133);
+}
+
+.leftlist, .rightlist{
+    font-family: "Brownstdregular";
+    font-size: 1rem;
+}
+.centerlist{
+    width:80%;
+}
+.right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+/* width: 500px; */
+width:20%;
+color:rgb(134, 133, 133);
+}
+
+.rightlistSub{
+    display: flex;
+    justify-content: space-evenly;
+/* width:150px; */
+width: 50%;
+}
+
+
+
+@media screen and (max-width: 1040px) {
+
+.left{
+    display:none
+}
+.right{
+    display: none;
+}
+.Navbar{
+    justify-content: space-between;
+}
+
+.hamburgerStyle{
+    display: block;
+    cursor: pointer;
+}
+
+
+
+}
+.smallScreenView{
+    /* width:100vw; */
+    height:max-content;
+    background-color: #f1e3e3;
+}
+
+.ssvListsStyle{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.ssvListStyle{
+    font-size: 2wv;
+    padding: 2wv;
+    color:#a99c9c;
+    letter-spacing: 0.2rem;
+}
+
+
+.closeStyle{
+    float: right;
+    padding: 0.5rem;
+    color: #a99c9c;
+}
