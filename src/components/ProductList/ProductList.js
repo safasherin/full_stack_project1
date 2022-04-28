@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react';
-// import bed from '../../images/Bed.png';
-// import towel from '../../images/Towel.png';
-// import bathrobes from '../../images/Bathrobes.png';
-
-// import fragrances from '../../images/Fragrances.png';
 import axios from 'axios';
 import './ProductList.css';
-import Carousel from 'react-elastic-carousel';
+
 export default function ProductList() {
 
     const [productlist, setProductlist] = useState(
@@ -21,7 +16,7 @@ export default function ProductList() {
     const getCategories = async () => {
         try {
             var resp = await axios.get(process.env.REACT_APP_ENDPOINT + "categories")
-            // var data = await resp.json()
+
             // console.log(resp)
             var data = await resp.data.map((item) => item.acf)
             // console.log(data)
@@ -41,8 +36,6 @@ export default function ProductList() {
                 that's both soft and crisp - guarenteed to give you a wonderful night's sleep.
             </p>
             <div className="productListsdiv">
-
-
                 {
                     productlist.map((item, indx) => (
                         <div className='divClass' key={indx}>
@@ -51,14 +44,8 @@ export default function ProductList() {
                         </div>
 
                     )
-
-
                     )
                 }
-
-
-
-
             </div>
         </div>
     )

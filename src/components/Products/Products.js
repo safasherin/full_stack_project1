@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import l1 from '../../images/l1.png'
-// import l2 from '../../images/l2.png'
-// import l3 from '../../images/l3.png'
+
 import axios from 'axios';
 
 import './Products.css';
@@ -14,28 +12,7 @@ export default function Products() {
         { width: 850, itemsToShow: 2 },
         { width: 1150, itemsToShow: 3, itemsToScroll: 1 },
         { width: 1450, itemsToShow: 3 },
-        // { width: 1750, itemsToShow: 3 },
     ]
-
-    // {
-    //     "image": l1,
-    //     "productname": "Towel",
-    //     "price": "AED XXX",
-    //     "offersorAvailableoptions": "Special offfer:25% offer"
-    // },
-    // {
-    //     "image": l2,
-    //     "productname": "Bath Towel",
-    //     "price": "AED XXX",
-    //     "offersorAvailableoptions": "Available in 4 colors"
-    // },
-    // {
-    //     "image": l3,
-    //     "productname": "Bath Robe",
-    //     "price": "AED XXX",
-    //     "offersorAvailableoptions": "Special offfer:15% offer"
-    // },
-
 
     useEffect(() => {
         async function fetchData() {
@@ -46,7 +23,7 @@ export default function Products() {
     const getProducts = async () => {
         try {
             var resp = await axios.get(process.env.REACT_APP_ENDPOINT + "products")
-            // var data = await resp.json()
+
             // console.log(resp)
             var data = resp.data.map((item) => item.acf)
             // console.log(data)
@@ -61,7 +38,6 @@ export default function Products() {
         <div className="productsMaindiv">
             <p className="bSStyle">Best Sellers</p>
 
-            {/* <Carousel responsive={responsive}> */}
 
             <div className='productsContainer'>
                 <Carousel breakPoints={breakPoints} outerSpacing={0} className='productsContainer'>
@@ -79,9 +55,6 @@ export default function Products() {
                     }
                 </Carousel>
             </div>
-
-
-
         </div >
     )
 }

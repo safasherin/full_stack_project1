@@ -19,18 +19,14 @@
 }
 
 .productsContainer{
-    display: flex;
-   
-    justify-content: center;
-    
-    
+    display: flex; 
+    justify-content: center; 
 }
 
 .plabelStyle1{
     margin: 0.8wv;
     font-family: "Brownstdregular";
-    color: #836e6e ;
-   
+    color: #836e6e ;   
 }
 
 .plabelStyle2{
@@ -61,11 +57,6 @@
     color: #ffffff;
     background: #c7c3c3;
 }
- /* .rec.eWjCzc:focus:enabled {
-    color: #fff;
-    background-color: rgb(207, 185, 185);
-    box-shadow: 0 0 2px 0 #333;
- } */
 
 
 .rec.rec-dot.rec-dot_active{
@@ -76,10 +67,6 @@
     box-shadow: 0 0 1px 3px #c7c3c3;
 }
 
-.prdStyle{
-/* width:100%; */
-/* max-width: 10%; */
-}
 .rec-item-wrapper{
     width:50%;
 }

@@ -4,12 +4,7 @@ import axios from 'axios';
 import './Testimonials.css'
 import Carousel from 'react-elastic-carousel';
 export default function Testimonials() {
-    const [items, setItems] = useState([
-        // {
-        //     "count": 5,
-        //     "text": "\"This is the best towel set I've ever had; coolest and prettier\""
-        // }
-    ])
+    const [items, setItems] = useState([])
 
     useEffect(() => {
         async function fetchData() {
@@ -20,7 +15,6 @@ export default function Testimonials() {
     const getTestimonials = async () => {
         try {
             var resp = await axios.get(process.env.REACT_APP_ENDPOINT + "testimonials")
-            // var data = await resp.json()
             // console.log(resp)
             var data = await resp.data.map((item) => item.acf)
             // console.log(data)

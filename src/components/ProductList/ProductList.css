@@ -2,29 +2,17 @@
     position: relative;
 }
 
-.para{
-    
+.para{  
     text-align: center;
     color:gray;
     font-size:2vw;
     padding-top:4%;
-    /* margin-top: 10%; */
 }
 
 .productListsImgs{
     width: 33rem;
     height: 33rem;
     object-fit: cover;
-    /* display: block; */
-    
-    /* width: 40%;
-    max-height: 30rem; */
-    /* width:441px;
-   height: 441px; */
-    /* width: 759px;
-    height: 765px;
-    position: static;
-    clip: rect(0,555,768,100); */
 }
 
 .productListsdiv{
@@ -45,7 +33,6 @@ background-color: #ffffff;
 color:#777575;
 transform: translate3d(7rem, -7rem, -1rem);
 font-family: "Brownstdregular";
-
 margin-bottom: -3rem;
 text-align: center;
 }
