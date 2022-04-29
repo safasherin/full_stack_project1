@@ -3,6 +3,11 @@ import { GrStar } from "react-icons/gr";
 import axios from 'axios';
 import './Testimonials.css'
 import Carousel from 'react-elastic-carousel';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+AOS.init()
+
 export default function Testimonials() {
     const [items, setItems] = useState([])
 
@@ -17,6 +22,7 @@ export default function Testimonials() {
             var resp = await axios.get(process.env.REACT_APP_ENDPOINT + "testimonials")
             // console.log(resp)
             var data = await resp.data.map((item) => item.acf)
+            await data.reverse()
             // console.log(data)
             setItems(data)
         }
@@ -26,8 +32,9 @@ export default function Testimonials() {
     }
 
     return (
-        <div className='testimonial'>
-            <Carousel itemsToShow={1}>
+        <div className='testimonial' data-aos="fade-up" data-aos-delay="50"
+            data-aos-duration="1000">
+            <Carousel itemsToShow={1} >
                 {
                     items.map((item, indx) => {
                         return (<div className="testiContainer" key={indx}>

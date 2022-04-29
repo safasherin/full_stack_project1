@@ -4,6 +4,13 @@ import axios from 'axios';
 
 import './Products.css';
 import Carousel from 'react-elastic-carousel';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+
+
+
+AOS.init();
 export default function Products() {
     const [offerProducts, setOfferProducts] = useState([]);
     const breakPoints = [
@@ -25,7 +32,8 @@ export default function Products() {
             var resp = await axios.get(process.env.REACT_APP_ENDPOINT + "products")
 
             // console.log(resp)
-            var data = resp.data.map((item) => item.acf)
+            var data = await resp.data.map((item) => item.acf)
+            await data.reverse()
             // console.log(data)
             setOfferProducts(data)
         }
@@ -35,7 +43,8 @@ export default function Products() {
     }
 
     return (
-        <div className="productsMaindiv">
+        <div className="productsMaindiv" data-aos="fade-in" data-aos-delay="50"
+            data-aos-duration="1000" >
             <p className="bSStyle">Best Sellers</p>
 
 

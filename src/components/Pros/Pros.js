@@ -4,9 +4,14 @@ import warranty from '../../images/Warranty.png';
 import stressfree from '../../images/StressFree.png';
 import fair from '../../images/Fair.png';
 import './Pros.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+AOS.init()
 export default function Pros() {
     return (
-        <div className='prosContainer'>
+        <div className='prosContainer' data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
 
             <p className="protitleStyle">
                 Your Comfort Is Our #1 Priority
